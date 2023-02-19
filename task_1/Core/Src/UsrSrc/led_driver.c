@@ -1,11 +1,21 @@
+/*
+ *	Basic LED driver header file
+ *	@author Daniel Horhul
+ */
+
+// Includes
 #include "UsrSrc/led_driver.h"
 
 
 // Local variable to store the LED state
-static LED_State g_led_state = { BM_ROUND_CYCLE, 0, 100 };
+static LED_State g_led_state = { 
+	BM_ROUND_CYCLE, 
+	0, 
+	100 
+};
 
 
-// Get the next iteration of the round cycle blink mode
+// Round cycle blink mode iteration
 static void _round_cycle_blink() {
 
 	if (g_led_state.base_led == 0) {
@@ -33,25 +43,8 @@ static void _round_cycle_blink() {
 }
 
 
-void set_blink_mode(BlinkMode mode) {
-	if (g_led_state.current_mode == mode)
-		// It's the same mode
-		return;
 
-	if (mode < BM_ROUND_CYCLE || mode > BM_NO_MODE)
-		// Unknown mode
-		return;
-
-	HAL_GPIO_WritePin(LED_PORT_GROUP, LD_LED_GREEN, 	GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(LED_PORT_GROUP, LD_LED_ORANGE, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(LED_PORT_GROUP, LD_LED_RED, 	GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(LED_PORT_GROUP, LD_LED_BLUE, 	GPIO_PIN_RESET);
-
-	g_led_state.current_mode 	= mode;
-	g_led_state.base_led		= 0;
-}
-
-
+// Get the next iteration for the set blink mode
 void blink_led() {
 
 	switch (g_led_state.current_mode) {
@@ -59,7 +52,7 @@ void blink_led() {
 		_round_cycle_blink();
 		break;
 
-	case BM_NO_MODE:
+	case BM_NULL:
 		break;
 
 	default:
