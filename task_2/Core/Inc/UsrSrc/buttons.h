@@ -1,5 +1,5 @@
 /*
- *	Basic LED driver header file
+ *	Basic button defines header file
  *	@author Daniel Horhul
  */
 
