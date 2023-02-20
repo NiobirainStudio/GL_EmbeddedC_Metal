@@ -9,7 +9,7 @@
 // Includes
 #include "stm32f4xx_hal.h"
 
-// LED layout
+// Button layout
 /*
  * 	^ BOARD TOP
  *
