@@ -1,10 +1,10 @@
 /*
  *	Basic LED driver header file
- *	@author Daniel Horhul
+ *	@author Vino
  */
 
-#ifndef DREADVER_LED_DRIVER_
-#define DREADVER_LED_DRIVER_
+#ifndef VNO_LED_DRIVER_
+#define VNO_LED_DRIVER_
 
 // Includes
 #include "stm32f4xx_hal.h"

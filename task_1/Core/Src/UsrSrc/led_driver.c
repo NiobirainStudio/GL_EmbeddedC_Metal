@@ -1,6 +1,6 @@
 /*
  *	Basic LED driver header file
- *	@author Daniel Horhul
+ *	@author Vino
  */
 
 // Includes

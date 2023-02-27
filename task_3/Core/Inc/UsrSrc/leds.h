@@ -1,5 +1,5 @@
 /*
- *	Basic LED driver header file
+ *	Basic LED defines header file
  *	@author Vino
  */
 
@@ -24,27 +24,5 @@
 #define LD_LED_RED		GPIO_PIN_14
 #define LD_LED_BLUE		GPIO_PIN_15
 #define LED_PORT_GROUP 	GPIOD
-
-
-// Possible blink modes
-typedef enum {
-	BM_ROUND_CYCLE = 0,
-
-	//! DO NOT USE AS AN ACTUAL MODE!
-	BM_NULL
-} BlinkMode;
-
-
-// Driver state structure
-typedef struct LED_State {
-	BlinkMode 	current_mode;
-	uint16_t 	base_led;
-	uint32_t 	blink_delay;
-} LED_State;
-
-
-
-// Get the next iteration for the set blink mode
-void blink_led();
 
 #endif
