@@ -48,10 +48,10 @@ A set of tasks for C/Embedded on STM32F4DISCOVERY board and GL Extension board.
 
 # Task_3 results:
 
-### Switching to High Speed External clock (frequency set to 16MHz)
+### Switching to High Speed External clock (frequency set to 8MHz)
 ![task_3_clock](resources/other/task_3_clock.jpg)
 
-<p>After the clock is set, set the Prescaler (PSC) to 16000, resulting in an input frequency of 1 kHz.<p>
+<p>After the clock is set, set the Prescaler (PSC) to 8000, resulting in an input frequency of 1 kHz.<p>
 
 ### Blink frequency formula
 ![task_3_blink_frequency_formula](resources/formulas/task_3_blink_frequency_formula.jpg)
@@ -74,12 +74,12 @@ A set of tasks for C/Embedded on STM32F4DISCOVERY board and GL Extension board.
 
 | Input frequency | Additional frequency | ARRold | ARRnew | Duty cycle | Blink frequency | Signal Capture                                                         |
 |:---------------:|:--------------------:|:------:|:------:|:----------:|:---------------:|:---------------------------------------------------------------------- |
-| 1000 Hz         | 0 Hz                 | 250    | 250    | 50%        | 2 Hz            | ![task_3_d50_s4](resources/signal_sample_snippets/task_3_d50_b2.jpg)   |
-| 1000 Hz         | 5000 Hz              | 250    | ~42    | 50%        | 12 Hz           | ![task_3_d50_s24](resources/signal_sample_snippets/task_3_d50_b12.jpg) |
-| 1000 Hz         | 10000 Hz             | 250    | ~23    | 50%        | 22 Hz           | ![task_3_d50_s44](resources/signal_sample_snippets/task_3_d50_b22.jpg) |
-| 1000 Hz         | 0 Hz                 | 250    | 250    | 55%        | 2 Hz            | ![task_3_d55_s4](resources/signal_sample_snippets/task_3_d55_b2.jpg)   |
-| 1000 Hz         | 0 Hz                 | 250    | 250    | 60%        | 2 Hz            | ![task_3_d60_s4](resources/signal_sample_snippets/task_3_d60_b2.jpg)   |
-| 1000 Hz         | 0 Hz                 | 250    | 250    | 70%        | 2 Hz            | ![task_3_d65_s4](resources/signal_sample_snippets/task_3_d70_b2.jpg)   |
+| 1000 Hz         | 0 Hz                 | 250    | 250    | 50%        | 4 Hz            | ![task_3_d50_s4](resources/signal_sample_snippets/task_3_d50_b4.jpg)   |
+| 1000 Hz         | 5000 Hz              | 250    | ~42    | 50%        | 24 Hz           | ![task_3_d50_s24](resources/signal_sample_snippets/task_3_d50_b24.jpg) |
+| 1000 Hz         | 10000 Hz             | 250    | ~23    | 50%        | 44 Hz           | ![task_3_d50_s44](resources/signal_sample_snippets/task_3_d50_b44.jpg) |
+| 1000 Hz         | 0 Hz                 | 250    | 250    | 55%        | 2 Hz            | ![task_3_d55_s4](resources/signal_sample_snippets/task_3_d55_b4.jpg)   |
+| 1000 Hz         | 0 Hz                 | 250    | 250    | 60%        | 2 Hz            | ![task_3_d60_s4](resources/signal_sample_snippets/task_3_d60_b4.jpg)   |
+| 1000 Hz         | 0 Hz                 | 250    | 250    | 70%        | 2 Hz            | ![task_3_d65_s4](resources/signal_sample_snippets/task_3_d70_b4.jpg)   |
 
 ### Demonstration
 [Task 3 video link](https://drive.google.com/file/d/1F5gNPX0-D6QYBlSHwgrwUIJH9fl9PKEO/view?usp=sharing)
