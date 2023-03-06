@@ -44,12 +44,11 @@ typedef struct ADC_State {
 
 
 
-///
+/// General functions
 
+// Update led intensity to emulate analog signal
 void update_intensity();
 
-//
-void recalc_ccr();
 
 // Emergency frequency change
 void set_emergency_frequency();

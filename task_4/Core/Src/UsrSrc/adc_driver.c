@@ -16,7 +16,7 @@ static ADC_State g_adc_state = { 0b00000000, { 0, 0, 0 } };
 
 /// General functions
 
-//
+// Update led intensity to emulate analog signal
 void update_intensity() {
 
 	float dc_val = 0.5 - (((float)adcResultsDMA[0] - g_adc_state.base_channels[0]) / ANALOG_STEP) * DUTY_CYCLE_STEP;
