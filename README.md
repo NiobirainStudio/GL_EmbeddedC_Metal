@@ -83,3 +83,7 @@ A set of tasks for C/Embedded on STM32F4DISCOVERY board and GL Extension board.
 
 ### Demonstration
 [Task 3 video link](https://drive.google.com/file/d/1F5gNPX0-D6QYBlSHwgrwUIJH9fl9PKEO/view?usp=sharing)
+
+
+# Task_7 results:
+![task_7_uart_msg.png](resources/other/task_7_uart_msg.png)
